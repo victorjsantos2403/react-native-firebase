@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { registerAction } from './src/firebase/firebase';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+      <Button title="firebase Action 1" onPress={() => {registerAction("screen1", "action1")}}></Button>
+      <Button title="firebase Action 2" onPress={() => {registerAction("screen2", "action2")}}></Button>
+    </View>    
   );
 }
 
@@ -15,5 +17,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });

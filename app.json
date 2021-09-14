@@ -7,6 +7,26 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier":"com.react-native.firebase",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyDEEebE3MdxNtnqplR9hHT-L_S7IS5Xbx0",
+          "authDomain": "react-native-87640.firebaseapp.com",
+          "projectId": "react-native-87640",
+          "storageBucket": "react-native-87640.appspot.com",
+          "messagingSenderId": "933610672551",
+          "appId": "1:933610672551:web:b67b19418ee5ede4cbe682",
+          "measurementId": "G-1GEY4ZN3HX"
+        }
+      }
+    }
   }
 }
